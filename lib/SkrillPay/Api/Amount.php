@@ -25,7 +25,7 @@ class Amount extends SkrillPayModel
      * The total amount payable. Note: Do not include the trailing zeroes if the amount is a natural number. For example: “23” (not “23.00”).
      * @return string
      */
-    public function getAmount(): string
+    public function getAmount()
     {
         return $this->amount;
     }
@@ -47,7 +47,7 @@ class Amount extends SkrillPayModel
      * 3-letter code of the currency of the amount according to ISO 4217 (see ISO 4217 currencies on page 10-1).
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency()
     {
         return $this->currency;
     }
@@ -67,7 +67,7 @@ class Amount extends SkrillPayModel
      * You can show up to five additional details about the product in the More information section in the header of Quick Checkout.
      * @return string
      */
-    public function getDetail1Description(): string
+    public function getDetail1Description()
     {
         return $this->detail1_description;
     }
@@ -87,7 +87,7 @@ class Amount extends SkrillPayModel
      * The detail1_text is shown next to the detail1_description in the More Information section in the header of the payment form with the other payment details. The detail1_description combined with the detail1_text is shown in the more information field of the merchant account history CSV file. Using the example values, this would be Product ID: 4509334. Note: If a customer makes a purchase using Skrill Wallet this information will also appear in the same field in their account history.
      * @return string
      */
-    public function getDetail1Text(): string
+    public function getDetail1Text()
     {
         return $this->detail1_text;
     }

@@ -31,7 +31,7 @@ class Customer extends SkrillPayModel
      * Email address of the customer who is making the payment. If provided, this field is hidden on the payment form. If left empty, the customer has to enter their email address.
      * @return string
      */
-    public function getPayFromEmail(): string
+    public function getPayFromEmail()
     {
         return $this->pay_from_email;
     }
@@ -51,7 +51,7 @@ class Customer extends SkrillPayModel
      * Customer’s first name.
      * @return string
      */
-    public function getFirstname(): string
+    public function getFirstname()
     {
         return $this->firstname;
     }
@@ -71,7 +71,7 @@ class Customer extends SkrillPayModel
      * Customer’s last name
      * @return string
      */
-    public function getLastname(): string
+    public function getLastname()
     {
         return $this->lastname;
     }
@@ -92,7 +92,7 @@ class Customer extends SkrillPayModel
         If provided this field will be prefilled in the Payment form. This saves time for SEPA payments and Skrill Wallet sign-up which require the customer to enter a date of birth.
      * @return string
      */
-    public function getDateOfBirth(): string
+    public function getDateOfBirth()
     {
         return $this->date_of_birth;
     }
@@ -113,7 +113,7 @@ class Customer extends SkrillPayModel
      * Customer’s address (for example: street)
      * @return string
      */
-    public function getAddress(): string
+    public function getAddress()
     {
         return $this->address;
     }
@@ -133,7 +133,7 @@ class Customer extends SkrillPayModel
      * Customer’s address (for example: town)
      * @return string
      */
-    public function getAddress2(): string
+    public function getAddress2()
     {
         return $this->address2;
     }
@@ -153,7 +153,7 @@ class Customer extends SkrillPayModel
      * Customer’s phone number. Only numeric values are accepted
      * @return string
      */
-    public function getPhoneNumber(): string
+    public function getPhoneNumber()
     {
         return $this->phone_number;
     }
@@ -174,7 +174,7 @@ class Customer extends SkrillPayModel
     (for example:, no punctuation marks or dashes)
      * @return string
      */
-    public function getPostalCode(): string
+    public function getPostalCode()
     {
         return $this->postal_code;
     }
@@ -195,7 +195,7 @@ class Customer extends SkrillPayModel
      * Customer’s city or postal area
      * @return string
      */
-    public function getCity(): string
+    public function getCity()
     {
         return $this->city;
     }
@@ -215,7 +215,7 @@ class Customer extends SkrillPayModel
      * Customer’s country in the 3-digit ISO Code (see ISO country codes (3- digit) on page 10-3).
      * @return string
      */
-    public function getCountry(): string
+    public function getCountry()
     {
         return $this->country;
     }
@@ -235,7 +235,7 @@ class Customer extends SkrillPayModel
      * Neteller customer account email or account ID
      * @return string
      */
-    public function getNetellerAccount(): string
+    public function getNetellerAccount()
     {
         return $this->neteller_account;
     }
@@ -254,7 +254,7 @@ class Customer extends SkrillPayModel
      * Secure ID or Google Authenticator One Time Password for the customer’s Neteller account
      * @return string
      */
-    public function getNetellerSecureId(): string
+    public function getNetellerSecureId()
     {
         return $this->neteller_secure_id;
     }
@@ -274,7 +274,7 @@ class Customer extends SkrillPayModel
      * Customer’s state or region.
      * @return string
      */
-    public function getState(): string
+    public function getState()
     {
         return $this->state;
     }

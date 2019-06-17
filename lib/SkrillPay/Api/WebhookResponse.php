@@ -42,7 +42,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getMerchantId(): string
+    public function getMerchantId()
     {
         return $this->merchant_id;
     }
@@ -58,7 +58,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getTransactionId(): string
+    public function getTransactionId()
     {
         return $this->transaction_id;
     }
@@ -74,7 +74,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getAmount(): string
+    public function getAmount()
     {
         return $this->amount;
     }
@@ -90,7 +90,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency()
     {
         return $this->currency;
     }
@@ -106,7 +106,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getCountry(): string
+    public function getCountry()
     {
         return $this->country;
     }
@@ -122,7 +122,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getMbAmount(): string
+    public function getMbAmount()
     {
         return $this->mb_amount;
     }
@@ -138,7 +138,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getFirstname(): string
+    public function getFirstname()
     {
         return $this->firstname;
     }
@@ -154,7 +154,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getLastname(): string
+    public function getLastname()
     {
         return $this->lastname;
     }
@@ -170,7 +170,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getIPCountry(): string
+    public function getIPCountry()
     {
         return $this->IP_country;
     }
@@ -186,7 +186,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getMd5sig(): string
+    public function getMd5sig()
     {
         return $this->md5sig;
     }
@@ -202,7 +202,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getPaymentType(): string
+    public function getPaymentType()
     {
         return $this->payment_type;
     }
@@ -218,7 +218,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getMbTransactionId(): string
+    public function getMbTransactionId()
     {
         return $this->mb_transaction_id;
     }
@@ -234,7 +234,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getMbCurrency(): string
+    public function getMbCurrency()
     {
         return $this->mb_currency;
     }
@@ -250,7 +250,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getPayFromEmail(): string
+    public function getPayFromEmail()
     {
         return $this->pay_from_email;
     }
@@ -266,7 +266,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getSha2sig(): string
+    public function getSha2sig()
     {
         return $this->sha2sig;
     }
@@ -282,7 +282,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getPayToEmail(): string
+    public function getPayToEmail()
     {
         return $this->pay_to_email;
     }
@@ -298,7 +298,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId()
     {
         return $this->customer_id;
     }
@@ -314,7 +314,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getPaymentMethod(): string
+    public function getPaymentMethod()
     {
         return $this->payment_method;
     }
@@ -330,7 +330,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getPaymentInstrumentCountry(): string
+    public function getPaymentInstrumentCountry()
     {
         return $this->payment_instrument_country;
     }
@@ -346,7 +346,7 @@ class WebhookResponse extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }

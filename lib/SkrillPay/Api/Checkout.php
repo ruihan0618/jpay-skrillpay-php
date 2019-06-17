@@ -28,7 +28,7 @@ class Checkout extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -46,7 +46,7 @@ class Checkout extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getIntent(): string
+    public function getIntent()
     {
         return $this->intent;
     }
@@ -64,7 +64,7 @@ class Checkout extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getPrepareOnly(): string
+    public function getPrepareOnly()
     {
         return $this->prepare_only;
     }

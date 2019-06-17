@@ -38,7 +38,7 @@ class PayerInfo extends SkrillPayModel
      * Email address of your Skrill merchant account.
      * @return string
      */
-    public function getPayToEmail(): string
+    public function getPayToEmail()
     {
         return $this->pay_to_email;
     }
@@ -59,7 +59,7 @@ class PayerInfo extends SkrillPayModel
      * A description to be shown on the Skrill payment page in the logo area if there is no logo_url parameter. If no value is submitted and there is no logo, the pay_to_email value is shown as the recipient of the payment. (Max 30 characters)
      * @return string
      */
-    public function getRecipientDescription(): string
+    public function getRecipientDescription()
     {
         return $this->recipient_description;
     }
@@ -80,7 +80,7 @@ class PayerInfo extends SkrillPayModel
      * Your unique reference or identification number for the transaction. (Must be unique for each payment)
      * @return string
      */
-    public function getTransactionId(): string
+    public function getTransactionId()
     {
         return $this->transaction_id;
     }
@@ -100,7 +100,7 @@ class PayerInfo extends SkrillPayModel
      * URL to which the customer is returned once the payment is made. If this field is not filled, the Skrill Quick Checkout page closes automatically at the end of the transaction and the customer is returned to the page on your website from where they were redirected to Skrill. A secure return URL option is available. (See Secure return_url parameter on page 5-1.)
      * @return string
      */
-    public function getReturnUrl(): string
+    public function getReturnUrl()
     {
         return $this->return_url;
     }
@@ -120,7 +120,7 @@ class PayerInfo extends SkrillPayModel
      * The text on the button when the customer finishes their payment.
      * @return string
      */
-    public function getReturnUrlText(): string
+    public function getReturnUrlText()
     {
         return $this->return_url_text;
     }
@@ -143,7 +143,7 @@ class PayerInfo extends SkrillPayModel
         4= '_blank'
      * @return string
      */
-    public function getReturnUrlTarget(): string
+    public function getReturnUrlTarget()
     {
         return $this->return_url_target;
     }
@@ -166,7 +166,7 @@ class PayerInfo extends SkrillPayModel
      * URL to which the customer is returned if the payment is cancelled or fails. If no cancel URL is provided the Cancel button is not displayed.
      * @return string
      */
-    public function getCancelUrl(): string
+    public function getCancelUrl()
     {
         return $this->cancel_url;
     }
@@ -189,7 +189,7 @@ class PayerInfo extends SkrillPayModel
         4= '_blank'
      * @return string
      */
-    public function getCancelUrlTarget(): string
+    public function getCancelUrlTarget()
     {
         return $this->cancel_url_target;
     }
@@ -215,7 +215,7 @@ class PayerInfo extends SkrillPayModel
         80, 81, 82, 83, 88, 90, 178, 419, 433, 443, 444, 448, 451, 666, 800, 888, 1025, 1430, 1680, 1888, 1916, 1985, 2006, 2221, 3000, 4111, 4121, 4423, 4440, 4441, 4442, 4443, 4450, 4451, 4455, 4567, 5443, 5507, 5653, 5654, 5656, 5678, 6500, 7000, 7001, 7022, 7102, 7777, 7878, 8000, 8001, 8002, 8011, 8014, 8015, 8016, 8027, 8070, 8080, 8081, 8082, 8085, 8086, 8088, 8090, 8097, 8180, 8181, 8443, 8449, 8680, 8843, 8888, 8989, 9006, 9088, 9443, 9797, 10088, 10443, 12312, 18049, 18079, 18080, 18090, 18443, 20202, 20600, 20601, 20603, 20607, 20611, 21301, 22240, 26004, 27040, 28080, 30080, 37208, 37906, 40002, 40005, 40080, 50001, 60080, 60443 These port restrictions apply to all Skrill status urls
      * @return string
      */
-    public function getStatusUrl(): string
+    public function getStatusUrl()
     {
         return $this->status_url;
     }
@@ -238,7 +238,7 @@ class PayerInfo extends SkrillPayModel
      * Second URL to which the transaction details are posted after the payment process is complete. Alternatively, you may specify an email address where the results are sent. The same port restrictions apply as for the status_url parameter above.
      * @return string
      */
-    public function getStatusUrl2(): string
+    public function getStatusUrl2()
     {
         return $this->status_url2;
     }
@@ -258,7 +258,7 @@ class PayerInfo extends SkrillPayModel
      * 2-letter code of the language used for Skrill’s pages. Can be any of the codes in Language support on page 10-2.
      * @return string
      */
-    public function getLanguage(): string
+    public function getLanguage()
     {
         return $this->language;
     }
@@ -282,7 +282,7 @@ class PayerInfo extends SkrillPayModel
         Avoid large images (much greater than 256 by 256px) to minimise the page loading time.
      * @return string
      */
-    public function getLogoUrl(): string
+    public function getLogoUrl()
     {
         return $this->logo_url;
     }
@@ -306,7 +306,7 @@ class PayerInfo extends SkrillPayModel
      * Forces only the SID to be returned without the actual page. Useful when using the secure method to redirect the customer to Quick Checkout. For details, see Secure redirection method on page 2-4. Accepted values are 0 (default) and 1 (prepare only).
      * @return string
      */
-    public function getPrepareOnly(): string
+    public function getPrepareOnly()
     {
         return $this->prepare_only;
     }
@@ -326,7 +326,7 @@ class PayerInfo extends SkrillPayModel
      * When a customer pays through Skrill, Skrill submits a preconfigured descriptor with the transaction, containing your business trading name/ brand name. The descriptor is typically displayed on the bank or credit card statement of the customer. For Klarna and Direct Debit payment methods, you can submit a dynamic_descriptor, which will override the default value stored by Skrill. See Adding a descriptor on page 5-2 for more details.
      * @return string
      */
-    public function getDynamicDescriptor(): string
+    public function getDynamicDescriptor()
     {
         return $this->dynamic_descriptor;
     }
@@ -346,7 +346,7 @@ class PayerInfo extends SkrillPayModel
      * This is an optional parameter containing the Session ID returned by the prepare_only call. If you use this parameter you should not supply any other parameters.
      * @return string
      */
-    public function getSid(): string
+    public function getSid()
     {
         return $this->sid;
     }
@@ -366,7 +366,7 @@ class PayerInfo extends SkrillPayModel
      * You can pass a unique referral ID or email of an affiliate from which the customer is referred. The rid value must be included within the actual payment request.
      * @return string
      */
-    public function getRid(): string
+    public function getRid()
     {
         return $this->rid;
     }
@@ -386,7 +386,7 @@ class PayerInfo extends SkrillPayModel
      * You can pass additional identifier in this field in order to track your affiliates. You must inform your account manager about the exact value that will be submitted so that affiliates can be tracked.
      * @return string
      */
-    public function getExtRefId(): string
+    public function getExtRefId()
     {
         return $this->ext_ref_id;
     }
@@ -406,7 +406,7 @@ class PayerInfo extends SkrillPayModel
      * A comma-separated list of field names that are passed back to your web server when the payment is confirmed (maximum 5 fields).
      * @return string
      */
-    public function getMerchantFields(): string
+    public function getMerchantFields()
     {
         return $this->merchant_fields;
     }
@@ -426,7 +426,7 @@ class PayerInfo extends SkrillPayModel
      * An example merchant field
      * @return string
      */
-    public function getField1(): string
+    public function getField1()
     {
         return $this->Field1;
     }
@@ -446,7 +446,7 @@ class PayerInfo extends SkrillPayModel
      * An example merchant field
      * @return string
      */
-    public function getField2(): string
+    public function getField2()
     {
         return $this->Field2;
     }

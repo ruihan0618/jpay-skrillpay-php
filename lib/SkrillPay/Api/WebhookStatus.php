@@ -61,7 +61,7 @@ class WebhookStatus extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }

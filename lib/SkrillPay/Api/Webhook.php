@@ -25,7 +25,7 @@ class Webhook extends SkrillPayResourceModel
     /**
      * @return string
      */
-    public function getPayload(): string
+    public function getPayload()
     {
         return $this->payload;
     }
