@@ -37,7 +37,7 @@ class VerifyWebhookSignature extends SkrillPayResourceModel
     /**
      * @return SkrillPay\Api\WebhookResponse
      */
-    public function getWebhookResponse(): WebhookResponse
+    public function getWebhookResponse()
     {
         return $this->webhookResponse;
     }
@@ -55,7 +55,7 @@ class VerifyWebhookSignature extends SkrillPayResourceModel
     /**
      * @return SkrillPay\Api\WebhookStatus
      */
-    public function getWebhookStatus(): WebhookStatus
+    public function getWebhookStatus()
     {
         return $this->webhookStatus;
     }

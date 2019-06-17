@@ -15,7 +15,6 @@ use SkrillPay\Rest\IResource;
 class SkrillPayResourceModel extends SkrillPayModel implements IResource
 {
 
-
     /**
      * @param $url
      * @param $method
@@ -25,6 +24,7 @@ class SkrillPayResourceModel extends SkrillPayModel implements IResource
      * @param null $restCall
      * @param array $handlers
      * @return mixed
+     * @throws \SkrillPay\Exception\SkrillPayConfigurationException
      * @throws \SkrillPay\Exception\SkrillPayConnectionException
      */
     protected static function executeCall($url, $method, $payLoad, $headers = array(), $apiContext = null, $restCall = null, $handlers = array('SkrillPay\Handler\RestHandler'))

@@ -28,14 +28,11 @@ class ReflectionUtil
 
 
     /**
-     * Gets Property Class of the given property.
-     * If the class is null, it returns null.
-     * If the property is not found, it returns null.
-     *
      * @param $class
      * @param $propertyName
-     * @return null|string
+     * @return array|string|null
      * @throws SkrillPayConfigurationException
+     * @throws \ReflectionException
      */
     public static function getPropertyClass($class, $propertyName)
     {
@@ -62,12 +59,11 @@ class ReflectionUtil
     }
 
     /**
-     * Checks if the Property is of type array or an object
-     *
      * @param $class
      * @param $propertyName
-     * @return null|boolean
+     * @return bool|null
      * @throws SkrillPayConfigurationException
+     * @throws \ReflectionException
      */
     public static function isPropertyClassArray($class, $propertyName)
     {
@@ -88,12 +84,10 @@ class ReflectionUtil
     }
 
     /**
-     * Retrieves Annotations of each property
-     *
      * @param $class
      * @param $propertyName
-     * @throws \RuntimeException
-     * @return mixed
+     * @return mixed|null
+     * @throws \ReflectionException
      */
     public static function propertyAnnotations($class, $propertyName)
     {

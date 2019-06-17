@@ -69,30 +69,6 @@ class Payer extends SkrillPayModel
     }
 
     /**
-     * Type of account relationship payer has with SkrillPay.
-     * Valid Values: ["BUSINESS", "PERSONAL", "PREMIER"]
-     * @deprecated Not publicly available
-     * @param string $account_type
-     * 
-     * @return $this
-     */
-    public function setAccountType($account_type)
-    {
-        $this->account_type = $account_type;
-        return $this;
-    }
-
-    /**
-     * Type of account relationship payer has with SkrillPay.
-     * @deprecated Not publicly available
-     * @return string
-     */
-    public function getAccountType()
-    {
-        return $this->account_type;
-    }
-
-    /**
      * Information related to the Payer. 
      *
      * @param \SkrillPay\Api\PayerInfo $payer_info

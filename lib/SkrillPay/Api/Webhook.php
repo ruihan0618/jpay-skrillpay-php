@@ -44,7 +44,7 @@ class Webhook extends SkrillPayResourceModel
     /**
      * @return WebhookStatus
      */
-    public function getStatus(): WebhookStatus
+    public function getStatus()
     {
         return $this->status;
     }
@@ -62,7 +62,7 @@ class Webhook extends SkrillPayResourceModel
     /**
      * @return VerifyWebhookSignature
      */
-    public function getVerifyWebhookSignature(): VerifyWebhookSignature
+    public function getVerifyWebhookSignature()
     {
         return $this->verifyWebhookSignature;
 
