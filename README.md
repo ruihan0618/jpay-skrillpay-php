@@ -1,10 +1,5 @@
 # SkrillPay PHP bindings
 
-[![Build Status](https://travis-ci.org/SkrillPay/SkrillPay-php.svg?branch=master)](https://travis-ci.org/SkrillPay/SkrillPay-php)
-[![Latest Stable Version](https://poser.pugx.org/SkrillPay/SkrillPay-php/v/stable.svg)](https://packagist.org/packages/SkrillPay/SkrillPay-php)
-[![Total Downloads](https://poser.pugx.org/SkrillPay/SkrillPay-php/downloads.svg)](https://packagist.org/packages/SkrillPay/SkrillPay-php)
-[![License](https://poser.pugx.org/SkrillPay/SkrillPay-php/license.svg)](https://packagist.org/packages/SkrillPay/SkrillPay-php)
-[![Code Coverage](https://coveralls.io/repos/SkrillPay/SkrillPay-php/badge.svg?branch=master)](https://coveralls.io/r/SkrillPay/SkrillPay-php?branch=master)
 
 You can sign up for a SkrillPay account at https://www.skrill.com.
 
