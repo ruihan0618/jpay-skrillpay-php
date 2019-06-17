@@ -25,7 +25,7 @@ require(dirname(__FILE__) . '/lib/SkrillPay/Core/SkrillPayHttpConfig.php');
 require(dirname(__FILE__) . '/lib/SkrillPay/Core/SkrillPayHttpConnection.php');
 require(dirname(__FILE__) . '/lib/SkrillPay/Core/SkrillPayLoggingManager.php');
 
-require(dirname(__FILE__) . '/lib/SkrillPay/Handler/IPayPalHandler.php');
+require(dirname(__FILE__) . '/lib/SkrillPay/Handler/ISkrillPayHandler.php');
 require(dirname(__FILE__) . '/lib/SkrillPay/Handler/OauthHandler.php');
 require(dirname(__FILE__) . '/lib/SkrillPay/Handler/RestHandler.php');
 
